@@ -1,0 +1,56 @@
+.about
+  &_wrapped
+    display: flex
+    flex-wrap: wrap
+  &__img
+    object-fit: cover
+    height: 100%
+    width: 100%
+    transform: scale(1.6)
+    transition: 2s all ease-in-out
+    cursor: pointer
+    &:hover
+      transform: scale(2)
+    &_wrapped
+      overflow: hidden
+      position: relative
+      flex-basis: 100%
+    &-content
+      position: absolute
+      z-index: 2
+      bottom: 20px
+      right: 20px
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+    &-title
+      text-align: right
+      margin-bottom: 20px
+      color: $white
+      font-size: 50px
+    &-subtitle
+      text-align: right
+      color: $white
+      font-size: 20px
+  &__content
+    &-block 
+      display: flex
+      max-width: 25%
+    &-title
+      writing-mode: vertical-lr
+      font-size: 30px
+      &_wrapped
+        margin-right: 20px
+    &-text
+      font-size: 17px
+      line-height: 
+    &_wrapped
+      display: flex
+      justify-content: space-around
+      align-items: start
+      padding: 5%
+      flex-basis: 100%
+      background-color: $skin
+      
+
+

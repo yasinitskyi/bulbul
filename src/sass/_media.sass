@@ -1,0 +1,83 @@
+@media (max-width: 1640px)
+  .container
+    max-width: 1300px
+
+@media (max-width: 1366px)
+  .container
+    max-width: 1200px
+  .about
+    &__img
+      &-title
+        font-size: 35px
+      &-subtitle
+        font-size: 15px
+    &__content
+      &_wrapped
+        padding: 3%
+      &-title
+        font-size: 25px
+      &-text
+        font-size: 15px
+
+@media (max-width: 1280px)
+  .container
+    max-width: 960px
+  .about
+    &__content
+      &_wrapped
+        flex-wrap: wrap
+        padding: 10%
+      &-block
+        max-width: 100%
+        flex-basis: 100%
+        margin-bottom: 40px
+      &-text
+        line-height: 1.50
+
+@media (max-width: 1024px)
+  .container
+    max-width: 740px
+  .wrapper
+    display: block
+  .header
+    position: relative
+    height: auto
+    box-shadow: none
+    padding: 3%
+    &__burger 
+      &_wrapped
+        display: block
+    &__logo
+      width: 31px
+      height: 22px
+      &::after
+        height: 6px
+        width: 8px
+        border-top: 5px solid black
+      &-item
+        width: 31px
+        height: 15px
+        &::before
+          height: 6px
+          width: 5px
+      &_wrapped   
+        position: relative
+        padding: 25px
+        transform: translate(0%, 0%)
+    &_wrapped
+      flex-direction: row
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-between
+    &__title
+      &_wrapped
+        margin-bottom: 0
+    &__menu
+      &_wrapped
+        flex-basis: 100%
+        align-items: center
+        max-height: 0px
+        overflow: hidden
+      &-item
+        display: flex
+        justify-content: center
