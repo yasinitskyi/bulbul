@@ -18,8 +18,12 @@ export default {
   methods: {
     async transferPics() {
       await this.$store.dispatch('pullPics');
-      const tempData = this.$store.state.pics;
-      this.pictures = tempData.splice(0, 19);
+      this.pictures = this.pics.splice(0, 18);
+    }
+  },
+  computed: {
+    pics() {
+      return this.$store.state.pics;
     }
   },
   created() {
