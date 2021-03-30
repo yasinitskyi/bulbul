@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import About from '../views/About.vue';
+import Pics from '../views/Pics.vue';
 
 const routes = [
   {
@@ -10,7 +11,9 @@ const routes = [
     // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    
+    path: '/pics',
+    name: 'Pics',
+    component: Pics,
   }
 ];
 
