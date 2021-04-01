@@ -34,10 +34,11 @@
       &-text
         line-height: 1.50
 
-  // .story
-  //   padding: 30px 60px
-  // .risk
-  //   padding: 30px 60px
+@media (min-width: 1024.1px)
+  .about
+    &__img
+      &:hover
+        transform: scale(2)
 
 @media (max-width: 1024px)
   .container
@@ -87,7 +88,17 @@
       &-item
         display: flex
         justify-content: center
+        &:last-child
+          display: block
+          display: flex
+          justify-content: center
+          margin-top: 25px
+          & span
+            text-align: center
   .about
+    &__img
+      &_wrapped
+        min-height: 220px
     &__content
       &-title
         &_wrapped
@@ -112,4 +123,13 @@
 @media (max-width: 550px)
   .container
     max-width: 320px
+  .about
+    &__img
+      transform: scale(1.6) translate(-10%, -5%)
+      &-content
+        max-width: 280px
+      &-title
+        margin-bottom: 15px
+      &-subtitle
+        font-size: 13px
 

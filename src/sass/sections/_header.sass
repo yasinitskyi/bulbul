@@ -82,8 +82,11 @@
     flex-direction: column
     &_wrapped
       transition: 0.5s all ease-in-out
-    &-item:not(:last-child)
-      margin-bottom: 15px
+    &-item
+      &:not(:last-child)
+        margin-bottom: 15px
+      &:last-child
+        display: none
     &-link
       transition: 0.2s all ease-in-out
       position: relative

@@ -26,6 +26,9 @@
           <li class="header__menu-item">
             <router-link to="/risk" class="header__menu-link">白頭翁的危機</router-link>
           </li>
+          <li class="header__menu-item">
+            <span>©</span>
+          </li>
         </ul>
       </nav>
     </div>
